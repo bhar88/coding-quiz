@@ -1,88 +1,144 @@
-body {
-  font-family: Arial;
-  font-size: 120%;
+#wrapper {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 500px;
+  height: 500px;
+  border: 1px solid purple;
 }
-
-a {
-  color: #563d7c;
-  text-decoration: none;
-  transition: color 0.1s;
-}
-
-a:hover {
-  color: #8570a5;
-}
-
-button {
-  display: inline-block;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 100%;
-  background-color: #563d7c;
-  border-radius: 5px;
-  padding: 2px 10px;
+#startTime {
+  background-color: purple;
+  margin-left: 33%;
+  padding: 15px 32px;
+  font-size: 20px;
   color: white;
-  border: 0;
-  transition: background-color 0.1s;
+}
+#questionsDiv {
+  margin: 20px;
 }
 
-button:hover {
-  background-color: #8570a5;
+#currentTime {
+  float: right;
 }
 
-.choices button {
-  display: block;
+#goBack {
+  background-color: purple;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
 }
 
-input[type="text"] {
-  font-size: 100%;
-}
 
-ol {
-  padding-left: 0px;
-  max-height: 400px;
-  overflow: auto;
-}
 
-li {
-  padding: 5px;
-  list-style: decimal inside none;
-}
-
-li:nth-child(odd) {
-  background-color: #f3edfc;
-}
-
-.wrapper {
-  margin: 100px auto 0 auto;
-  max-width: 600px;
-}
-
-.hide {
-  display: none;
-}
-
-.start {
+#clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  /* position: relative; */
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  right: 5%;
   text-align: center;
 }
 
-.scores {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+button {
+  border-radius: 8px;
 }
 
-.feedback {
-  font-style: italic;
-  font-size: 120%;
+textarea {
+  width: 90%;
+  margin: 20px;
+}
+
+#Submit {
+  background-color: purple;
+  margin-left: 33%;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+}
+
+label {
+  margin-right: 10px;
+}
+input {
+  margin-bottom: 20px;
+  width: 50%;
+  border: 1px solid lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  background-color: purple;
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+}
+
+#createDiv {
   margin-top: 20px;
-  padding-top: 10px;
-  color: gray;
-  border-top: 2px solid #ccc;
+  border-top: 1px solid lightgray;
 }
 
-.timer {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+/* Start media queries */
+/* A Media Query max-width: 786px */
+@media screen and (max-width: 786px) {
+/* Resized content to fit 786px  */
+body {
+  max-width: 786px;
+}
+/* Resized main-content to fit 786px  */
+#wrapper {
+position: absolute;
+left: 20%;
+}
+
+a {
+margin-left: 20%;
+}
+#goBack {
+  
+  position: relative;
+  left: 55%;
+}
+
+#clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 5%;
+  text-align: center;
+}
+}
+
+/* A Media Query max-width: 640px */
+@media screen and (max-width: 640px) {
+/* Resized content to fit 640px  */
+body {
+  min-width: 640px;
+}
+/* Resized main-content to fit 640px  */
+#wrapper {
+position: absolute;
+left: 10%;
+}
+a {
+margin-left: 10%;
+}
+
+
 }
